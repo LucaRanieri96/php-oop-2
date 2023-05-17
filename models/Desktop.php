@@ -5,9 +5,9 @@ class Desktop extends Computer
     private $ventole;
     private $schedaWifi;
 
-    public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $ventole, $schedaWifi)
+    public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $ventole, $schedaWifi, $img)
     {
-        parent::__construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse);
+        parent::__construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $img);
         $this->ventole = $ventole;
         $this->schedaWifi = $schedaWifi;
     }

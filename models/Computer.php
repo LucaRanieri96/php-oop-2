@@ -13,7 +13,9 @@ class Computer
   private $monitor;
   private $mouse;
 
-  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu,$case, $tastiera, $monitor, $mouse)
+  private $img;
+
+  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu,$case, $tastiera, $monitor, $mouse, $img)
   {
     $this->schedaMadre = $schedaMadre;
     $this->psu = $psu;
@@ -25,6 +27,7 @@ class Computer
     $this->tastiera = $tastiera;
     $this->monitor = $monitor;
     $this->mouse = $mouse;
+    $this->img = $img;
   }
 
   public function getSchedaMadre()
@@ -75,5 +78,9 @@ class Computer
   public function getGpu()
   {
     return $this->gpu;
+  }
+  public function getImg()
+  {
+    return $this->img;
   }
 }

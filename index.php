@@ -77,3 +77,25 @@ class Computer
     return $this->gpu;
   }
 }
+
+class Desktop extends Computer
+{
+  private $ventole;
+  private $schedaWifi;
+
+  public function __construct($schedaMadre, $psu, $case, $tastiera, $monitor, $mouse, $cpu, $ram, $ssd, $gpu, $ventole, $schedaWifi)
+  {
+    parent::__construct($schedaMadre, $psu, $case, $tastiera, $monitor, $mouse, $cpu, $ram, $ssd, $gpu);
+    $this->ventole = $ventole;
+    $this->schedaWifi= $schedaWifi;
+  }
+
+  public function getNumeroVentole()
+  {
+    return $this->ventole;
+  }
+  public function getSchedaWifi()
+  {
+    return $this->schedaWifi;
+  }
+}

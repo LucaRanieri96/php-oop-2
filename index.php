@@ -99,3 +99,26 @@ class Desktop extends Computer
     return $this->schedaWifi;
   }
 }
+
+class Laptop extends Computer
+{
+  private $dimensioneSchermo;
+  private $batteria;
+
+  public function __construct($schedaMadre, $cpu, $ram, $ssd, $gpu, $dimensioneSchermo, $batteria)
+  {
+    parent::__construct($schedaMadre, null, null, null, $dimensioneSchermo, null, $cpu, $ram, $ssd, $gpu);
+    $this->dimensioneSchermo = $dimensioneSchermo;
+    $this->batteria = $batteria;
+  }
+
+  public function getDimensioneSchermo()
+  {
+    return $this->dimensioneSchermo;
+  }
+
+  public function getBatteria()
+  {
+    return $this->batteria;
+  }
+}

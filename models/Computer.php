@@ -15,7 +15,7 @@ class Computer
 
   private $img;
 
-  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu,$case, $tastiera, $monitor, $mouse, $img)
+  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $img)
   {
     $this->schedaMadre = $schedaMadre;
     $this->psu = $psu;

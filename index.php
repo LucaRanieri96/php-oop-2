@@ -46,6 +46,10 @@ include "db.php";
             <li class="list-group-item"><?php echo "Keyboard: " . $computer->getTastiera(); ?></li>
             <li class="list-group-item"><?php echo "Monitor: " . $computer->getMonitor(); ?></li>
             <li class="list-group-item"><?php echo "Mouse: " . $computer->getMouse(); ?></li>
+            <li class="list-group-item"><?php echo "Dimensione Schermo: " . $computer->getDimensioneSchermo(); ?></li>
+            <li class="list-group-item"><?php echo "Batteria: " . $computer->getBatteria(); ?></li>
+            <li class="list-group-item"><?php echo "Ventole: " . $computer->getNumeroVentole(); ?></li>
+            <li class="list-group-item"><?php echo "Scheda WiFi: " . $computer->getSchedaWifi(); ?></li>
           </ul>
         </div>
       </div>

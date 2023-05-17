@@ -24,4 +24,12 @@ class Desktop extends Computer
     {
         return "Desktop";
     }
+    public function getBatteria()
+    {
+        return 'non specificato';
+    }
+    public function getDimensioneSchermo()
+    {
+        return 'non specificato';
+    }
 }

@@ -8,7 +8,7 @@ class Laptop extends Computer
 
     public function __construct($schedaMadre, $cpu, $ram, $ssd, $gpu, $dimensioneSchermo, $batteria, $marca, $img)
     {
-        parent::__construct($schedaMadre, null, $cpu, $ram, $ssd, $gpu, null, null, null, null, $img);
+        parent::__construct($schedaMadre, 'NN', $cpu, $ram, $ssd, $gpu, 'NN', 'NN', 'NN', 'NN', $img);
         $this->dimensioneSchermo = $dimensioneSchermo;
         $this->batteria = $batteria;
         $this->marca = $marca;
@@ -26,5 +26,13 @@ class Laptop extends Computer
     public function getTipoProdotto()
     {
         return "Laptop";
+    }
+    public function getNumeroVentole()
+    {
+        return 'non specificato';
+    }
+    public function getSchedaWifi()
+    {
+        return 'presente';
     }
 }

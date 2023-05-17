@@ -28,26 +28,28 @@ include "db.php";
   <div class="container">
     <h1 class="text-center m-5">Computers</h1>
     <div class="row">
-      <?php foreach ($computers as $computer) ?>
+      <?php foreach ($computers as $computer): ?>
       <div class="col-3">
         <div class="card">
           <img class="card-img-top" src="..." alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Desktop/Laptop</h5>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item"><?php echo "Mobo: " . $computer->getSchedaMadre(); ?></li>
+            <li class="list-group-item"><?php echo "Psu: " . $computer->getPsu(); ?></li>
+            <li class="list-group-item"><?php echo "Cpu: " . $computer->getCpu(); ?></li>
+            <li class="list-group-item"><?php echo "RAM: " . $computer->getRam(); ?></li>
+            <li class="list-group-item"><?php echo "Storage: " . $computer->getSsd(); ?></li>
+            <li class="list-group-item"><?php echo "Gpu: " . $computer->getGpu(); ?></li>
+            <li class="list-group-item"><?php echo "Case: " . $computer->getCase(); ?></li>
+            <li class="list-group-item"><?php echo "Keyboard: " . $computer->getTastiera(); ?></li>
+            <li class="list-group-item"><?php echo "Monitor: " . $computer->getMonitor(); ?></li>
+            <li class="list-group-item"><?php echo "Mouse: " . $computer->getMouse(); ?></li>
           </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
         </div>
       </div>
+      <?php endforeach; ?>
     </div>
   </div>
 

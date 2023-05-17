@@ -29,11 +29,11 @@ include "db.php";
     <h1 class="text-center m-5">Computers</h1>
     <div class="row">
       <?php foreach ($computers as $computer): ?>
-      <div class="col-3">
+      <div class="col-4">
         <div class="card">
           <img class="card-img-top" src="..." alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Desktop/Laptop</h5>
+            <h5 class="card-title"><?php echo $computer->getTipoProdotto(); ?></h5>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><?php echo "Mobo: " . $computer->getSchedaMadre(); ?></li>

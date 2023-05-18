@@ -1,7 +1,8 @@
 <?php
-
+ include_once __DIR__.'/../traits/Availability.php';
 class Computer
 {
+  use Availability;
   private $schedaMadre;
   private $psu;
   private $cpu;
@@ -12,10 +13,9 @@ class Computer
   private $tastiera;
   private $monitor;
   private $mouse;
-
   private $img;
 
-  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $img)
+  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $img, )
   {
     $this->schedaMadre = $schedaMadre;
     $this->psu = $psu;

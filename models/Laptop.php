@@ -6,9 +6,9 @@ class Laptop extends Computer
     private $batteria;
     private $marca;
 
-    public function __construct($schedaMadre, $cpu, $ram, $ssd, $gpu, $dimensioneSchermo, $batteria, $marca, $img)
+    public function __construct($schedaMadre, $cpu, $ram, $ssd, $gpu, $dimensioneSchermo, $batteria, $marca, $img,$price)
     {
-        parent::__construct($schedaMadre, 'NN', $cpu, $ram, $ssd, $gpu, 'NN', 'NN', 'NN', 'NN', $img);
+        parent::__construct($schedaMadre, 'NN', $cpu, $ram, $ssd, $gpu, 'NN', 'NN', 'NN', 'NN', $img, $price);
         $this->dimensioneSchermo = $dimensioneSchermo;
         $this->batteria = $batteria;
         $this->marca = $marca;
@@ -29,7 +29,7 @@ class Laptop extends Computer
     }
     public function getNumeroVentole()
     {
-        return 'non specificato';
+        return '1';
     }
     public function getSchedaWifi()
     {

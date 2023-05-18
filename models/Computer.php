@@ -1,8 +1,10 @@
 <?php
  include_once __DIR__.'/../traits/Availability.php';
+ include_once __DIR__.'/../traits/Discount.php';
 class Computer
 {
   use Availability;
+  use Discount;
   private $schedaMadre;
   private $psu;
   private $cpu;
@@ -14,8 +16,9 @@ class Computer
   private $monitor;
   private $mouse;
   private $img;
+  private $price;
 
-  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $img, )
+  public function __construct($schedaMadre, $psu, $cpu, $ram, $ssd, $gpu, $case, $tastiera, $monitor, $mouse, $img, $price)
   {
     $this->schedaMadre = $schedaMadre;
     $this->psu = $psu;
@@ -28,6 +31,7 @@ class Computer
     $this->monitor = $monitor;
     $this->mouse = $mouse;
     $this->img = $img;
+    $this->price = $price;
   }
 
   public function getSchedaMadre()
@@ -82,5 +86,10 @@ class Computer
   public function getImg()
   {
     return $this->img;
+  }
+
+  public function getPrice()
+  {
+    return $this->price;
   }
 }

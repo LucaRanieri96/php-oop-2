@@ -37,9 +37,11 @@ include "db.php";
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><?php echo "Disponibilità: " . $computer->getAvailability(); ?></li>
+            
             <li class="list-group-item"><?php echo "Price: " . $computer->getPrice(); ?></li>
             <li class="list-group-item"><?php echo "Sconto: " . $computer->setDiscount(10)."%"; ?></li>
             <li class="list-group-item"><?php echo "Prezzo Scontato: " . $computer->getDiscount($computer->getPrice())."$"; ?></li>
+
             <li class="list-group-item"><?php echo "Mobo: " . $computer->getSchedaMadre(); ?></li>
             <li class="list-group-item"><?php echo "Psu: " . $computer->getPsu(); ?></li>
             <li class="list-group-item"><?php echo "Cpu: " . $computer->getCpu(); ?></li>

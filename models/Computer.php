@@ -1,6 +1,6 @@
 <?php
- include_once __DIR__.'/../traits/Availability.php';
- include_once __DIR__.'/../traits/Discount.php';
+ include_once __DIR__ . '/../traits/Availability.php';
+ include_once __DIR__ . '/../traits/Discount.php';
 class Computer
 {
   use Availability;

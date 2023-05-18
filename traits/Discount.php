@@ -9,6 +9,10 @@ trait Discount {
     }
 
     public function getDiscount($price) {
-        return $price - ($price * $this->discount / 100);
+        // if ($price < 800) {
+        //     throw new Exception("Niente sconti ai poveri(fa male ma è così)");
+        // }else{
+            return $price - ($price * $this->discount / 100);
+        // }
     }
 }

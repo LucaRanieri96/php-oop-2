@@ -36,6 +36,7 @@ include "db.php";
             <h5 class="card-title"><?php echo $computer->getTipoProdotto(); ?></h5>
           </div>
           <ul class="list-group list-group-flush">
+            <li class="list-group-item"><?php echo "Disponibilità: " . $computer->getAvailability(); ?></li>
             <li class="list-group-item"><?php echo "Mobo: " . $computer->getSchedaMadre(); ?></li>
             <li class="list-group-item"><?php echo "Psu: " . $computer->getPsu(); ?></li>
             <li class="list-group-item"><?php echo "Cpu: " . $computer->getCpu(); ?></li>
